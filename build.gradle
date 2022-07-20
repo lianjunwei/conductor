@@ -5,6 +5,7 @@ buildscript {
         mavenCentral()
         maven {
             url "https://plugins.gradle.org/m2/"
+//            url "https://maven.aliyun.com/repository/public"
         }
     }
     dependencies {
@@ -134,13 +135,14 @@ allprojects {
     compileJava.inputs.files(processResources)
 
     test {
-        useJUnitPlatform()
-        testLogging {
-            events = ["SKIPPED", "FAILED"]
-            exceptionFormat = "full"
-            displayGranularity = 1
-            showStandardStreams = false
-        }
+        enabled(false)
+//        useJUnitPlatform()
+//        testLogging {
+//            events = ["SKIPPED", "FAILED"]
+//            exceptionFormat = "full"
+//            displayGranularity = 1
+//            showStandardStreams = false
+//        }
     }
 }
 

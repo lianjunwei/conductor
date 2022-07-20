@@ -41,7 +41,15 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
 
     implementation "org.springdoc:springdoc-openapi-ui:${revOpenapi}"
+    //    implementation 'org.flywaydb:flyway-core:7.15.0'
+//    implementation 'mysql:mysql-connector-java:5.1.47'
+//    implementation 'mysql:mysql-connector-java:8.0.25'
+//    implementation 'com.netflix.conductor:conductor-mysql-persistence:3.9.1-rc.1'
 
+    implementation 'org.postgresql:postgresql:42.3.4'
+    implementation 'com.netflix.conductor:conductor-postgres-persistence:3.10.0'
+
+    //    runtimeOnly 'com.netflix.conductor:conductor-es7-persistence:3.9.1-rc.1'
     runtimeOnly "org.glassfish.jaxb:jaxb-runtime:${revJAXB}"
 
     testImplementation project(':conductor-rest')
