@@ -88,6 +88,12 @@
         "com.netflix.conductor:conductor-core": {
             "project": true
         },
+        "com.netflix.conductor:conductor-postgres-persistence": {
+            "firstLevelTransitive": [
+                "com.netflix.conductor:conductor-core"
+            ],
+            "locked": "3.10.0"
+        },
         "com.netflix.spectator:spectator-api": {
             "firstLevelTransitive": [
                 "com.netflix.conductor:conductor-core"
@@ -177,6 +183,12 @@
                 "com.netflix.conductor:conductor-core"
             ],
             "locked": "2.17.1"
+        },
+        "org.postgresql:postgresql": {
+            "firstLevelTransitive": [
+                "com.netflix.conductor:conductor-core"
+            ],
+            "locked": "42.3.4"
         },
         "org.redisson:redisson": {
             "locked": "3.13.3"
@@ -281,6 +293,12 @@
         "com.netflix.conductor:conductor-core": {
             "project": true
         },
+        "com.netflix.conductor:conductor-postgres-persistence": {
+            "firstLevelTransitive": [
+                "com.netflix.conductor:conductor-core"
+            ],
+            "locked": "3.10.0"
+        },
         "com.netflix.spectator:spectator-api": {
             "firstLevelTransitive": [
                 "com.netflix.conductor:conductor-core"
@@ -376,6 +394,12 @@
         },
         "org.junit.vintage:junit-vintage-engine": {
             "locked": "5.8.2"
+        },
+        "org.postgresql:postgresql": {
+            "firstLevelTransitive": [
+                "com.netflix.conductor:conductor-core"
+            ],
+            "locked": "42.3.4"
         },
         "org.redisson:redisson": {
             "locked": "3.13.3"

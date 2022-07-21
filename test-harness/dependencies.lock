@@ -338,6 +338,13 @@
             ],
             "project": true
         },
+        "com.netflix.conductor:conductor-postgres-persistence": {
+            "firstLevelTransitive": [
+                "com.netflix.conductor:conductor-core",
+                "com.netflix.conductor:conductor-server"
+            ],
+            "locked": "3.10.0"
+        },
         "com.netflix.conductor:conductor-redis-concurrency-limit": {
             "firstLevelTransitive": [
                 "com.netflix.conductor:conductor-server"
@@ -656,6 +663,13 @@
         },
         "org.junit.vintage:junit-vintage-engine": {
             "locked": "5.8.2"
+        },
+        "org.postgresql:postgresql": {
+            "firstLevelTransitive": [
+                "com.netflix.conductor:conductor-core",
+                "com.netflix.conductor:conductor-server"
+            ],
+            "locked": "42.3.4"
         },
         "org.rarefiedredis.redis:redis-java": {
             "firstLevelTransitive": [

@@ -109,6 +109,12 @@
         "com.netflix.conductor:conductor-core": {
             "project": true
         },
+        "com.netflix.conductor:conductor-postgres-persistence": {
+            "firstLevelTransitive": [
+                "com.netflix.conductor:conductor-core"
+            ],
+            "locked": "3.10.0"
+        },
         "com.netflix.spectator:spectator-api": {
             "firstLevelTransitive": [
                 "com.netflix.conductor:conductor-core"
@@ -207,6 +213,12 @@
         },
         "org.elasticsearch.client:transport": {
             "locked": "6.8.12"
+        },
+        "org.postgresql:postgresql": {
+            "firstLevelTransitive": [
+                "com.netflix.conductor:conductor-core"
+            ],
+            "locked": "42.3.4"
         }
     },
     "testCompileClasspath": {
@@ -329,6 +341,12 @@
         "com.netflix.conductor:conductor-core": {
             "project": true
         },
+        "com.netflix.conductor:conductor-postgres-persistence": {
+            "firstLevelTransitive": [
+                "com.netflix.conductor:conductor-core"
+            ],
+            "locked": "3.10.0"
+        },
         "com.netflix.spectator:spectator-api": {
             "firstLevelTransitive": [
                 "com.netflix.conductor:conductor-core"
@@ -436,6 +454,12 @@
         },
         "org.junit.vintage:junit-vintage-engine": {
             "locked": "5.8.2"
+        },
+        "org.postgresql:postgresql": {
+            "firstLevelTransitive": [
+                "com.netflix.conductor:conductor-core"
+            ],
+            "locked": "42.3.4"
         },
         "org.springframework.boot:spring-boot-starter-log4j2": {
             "locked": "2.6.7"

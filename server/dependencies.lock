@@ -29,6 +29,9 @@
         "com.netflix.conductor:conductor-json-jq-task": {
             "project": true
         },
+        "com.netflix.conductor:conductor-postgres-persistence": {
+            "locked": "3.10.0"
+        },
         "com.netflix.conductor:conductor-redis-concurrency-limit": {
             "project": true
         },
@@ -55,6 +58,9 @@
         },
         "org.apache.logging.log4j:log4j-web": {
             "locked": "2.17.1"
+        },
+        "org.postgresql:postgresql": {
+            "locked": "42.3.4"
         },
         "org.springdoc:springdoc-openapi-ui": {
             "locked": "1.6.9"
@@ -210,6 +216,12 @@
         },
         "com.netflix.conductor:conductor-json-jq-task": {
             "project": true
+        },
+        "com.netflix.conductor:conductor-postgres-persistence": {
+            "firstLevelTransitive": [
+                "com.netflix.conductor:conductor-core"
+            ],
+            "locked": "3.10.0"
         },
         "com.netflix.conductor:conductor-redis-concurrency-limit": {
             "project": true
@@ -462,6 +474,12 @@
         },
         "org.glassfish.jaxb:jaxb-runtime": {
             "locked": "2.3.3"
+        },
+        "org.postgresql:postgresql": {
+            "firstLevelTransitive": [
+                "com.netflix.conductor:conductor-core"
+            ],
+            "locked": "42.3.4"
         },
         "org.rarefiedredis.redis:redis-java": {
             "firstLevelTransitive": [
@@ -643,6 +661,12 @@
         "com.netflix.conductor:conductor-json-jq-task": {
             "project": true
         },
+        "com.netflix.conductor:conductor-postgres-persistence": {
+            "firstLevelTransitive": [
+                "com.netflix.conductor:conductor-core"
+            ],
+            "locked": "3.10.0"
+        },
         "com.netflix.conductor:conductor-redis-concurrency-limit": {
             "project": true
         },
@@ -895,6 +919,12 @@
         "org.glassfish.jaxb:jaxb-runtime": {
             "locked": "2.3.3"
         },
+        "org.postgresql:postgresql": {
+            "firstLevelTransitive": [
+                "com.netflix.conductor:conductor-core"
+            ],
+            "locked": "42.3.4"
+        },
         "org.rarefiedredis.redis:redis-java": {
             "firstLevelTransitive": [
                 "com.netflix.conductor:conductor-redis-persistence"
@@ -973,6 +1003,9 @@
         "com.netflix.conductor:conductor-json-jq-task": {
             "project": true
         },
+        "com.netflix.conductor:conductor-postgres-persistence": {
+            "locked": "3.10.0"
+        },
         "com.netflix.conductor:conductor-redis-concurrency-limit": {
             "project": true
         },
@@ -1014,6 +1047,9 @@
         },
         "org.junit.vintage:junit-vintage-engine": {
             "locked": "5.8.2"
+        },
+        "org.postgresql:postgresql": {
+            "locked": "42.3.4"
         },
         "org.springdoc:springdoc-openapi-ui": {
             "locked": "1.6.9"
@@ -1173,6 +1209,12 @@
         "com.netflix.conductor:conductor-json-jq-task": {
             "project": true
         },
+        "com.netflix.conductor:conductor-postgres-persistence": {
+            "firstLevelTransitive": [
+                "com.netflix.conductor:conductor-core"
+            ],
+            "locked": "3.10.0"
+        },
         "com.netflix.conductor:conductor-redis-concurrency-limit": {
             "project": true
         },
@@ -1433,6 +1475,12 @@
         },
         "org.junit.vintage:junit-vintage-engine": {
             "locked": "5.8.2"
+        },
+        "org.postgresql:postgresql": {
+            "firstLevelTransitive": [
+                "com.netflix.conductor:conductor-core"
+            ],
+            "locked": "42.3.4"
         },
         "org.rarefiedredis.redis:redis-java": {
             "firstLevelTransitive": [
