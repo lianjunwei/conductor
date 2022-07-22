@@ -1844,7 +1844,7 @@ __webpack_require__.r(__webpack_exports__);
 var TaskResourceService = /** @class */ (function () {
     function TaskResourceService(httpClient, basePath, configuration) {
         this.httpClient = httpClient;
-        this.basePath = 'http://localhost:8080';
+        this.basePath = 'http://10.190.32.158:8080';
         this.defaultHeaders = new _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpHeaders"]();
         this.configuration = new _configuration__WEBPACK_IMPORTED_MODULE_3__["Configuration"]();
         if (basePath) {
@@ -7569,10 +7569,10 @@ var WorkflowDefinitionsComponent = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "environment", function() { return environment; });
 var environment = {
-    WF_SERVER: 'http://localhost:8080',
+    WF_SERVER: 'http://10.190.32.158:8080',
     WF_SERVER_HC_TIME_INTERVAL_MS: 60000,
     OAUTH_TOKEN_URL: 'http://localhost:9990/auth/realms/conductor/protocol/openid-connect/token',
-    OAUTH_USER_INFO_URL: 'http://localhost:8080/userinfo',
+    OAUTH_USER_INFO_URL: 'http://10.190.32.158:8080/userinfo',
     OAUTH_LOGOUT_URL: 'http://localhost:9990/auth/realms/conductor/protocol/openid-connect/logout',
     OAUTH_ENABLED: 'N',
     OAUTH_CLIENT_ID: 'conductor_user_client',
@@ -10415,7 +10415,8 @@ var TokenInterceptor = /** @class */ (function () {
     };
     TokenInterceptor.prototype.intercept = function (req, next) {
         var _this = this;
-        if (req.url.endsWith("/logout") || req.url.endsWith("/token") || !src_environments_environment__WEBPACK_IMPORTED_MODULE_4__["environment"].OAUTH_ENABLED || 'Y' != src_environments_environment__WEBPACK_IMPORTED_MODULE_4__["environment"].OAUTH_ENABLED) {
+        // if (req.url.endsWith("/logout") || req.url.endsWith("/token") || !src_environments_environment__WEBPACK_IMPORTED_MODULE_4__["environment"].OAUTH_ENABLED || 'Y' != src_environments_environment__WEBPACK_IMPORTED_MODULE_4__["environment"].OAUTH_ENABLED) {
+        if (req.url.endsWith("/logout") || req.url.endsWith("/token")) {
             console.log('Request forwarded to API');
             return next.handle(req);
         }
@@ -13594,7 +13595,7 @@ __webpack_require__.r(__webpack_exports__);
 var WorkflowBulkResourceService = /** @class */ (function () {
     function WorkflowBulkResourceService(httpClient, basePath, configuration) {
         this.httpClient = httpClient;
-        this.basePath = 'http://localhost:8080';
+        this.basePath = 'http://10.190.32.158:8080';
         this.defaultHeaders = new _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpHeaders"]();
         this.configuration = new _configuration__WEBPACK_IMPORTED_MODULE_3__["Configuration"]();
         if (basePath) {
@@ -13945,7 +13946,7 @@ __webpack_require__.r(__webpack_exports__);
 var AdminResourceService = /** @class */ (function () {
     function AdminResourceService(httpClient, basePath, configuration) {
         this.httpClient = httpClient;
-        this.basePath = 'http://localhost:8080';
+        this.basePath = 'http://10.190.32.158:8080';
         this.defaultHeaders = new _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpHeaders"]();
         this.configuration = new _configuration__WEBPACK_IMPORTED_MODULE_3__["Configuration"]();
         if (basePath) {
@@ -18081,7 +18082,7 @@ __webpack_require__.r(__webpack_exports__);
 var QueueAdminResourceService = /** @class */ (function () {
     function QueueAdminResourceService(httpClient, basePath, configuration) {
         this.httpClient = httpClient;
-        this.basePath = 'http://localhost:8080';
+        this.basePath = 'http://10.190.32.158:8080';
         this.defaultHeaders = new _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpHeaders"]();
         this.configuration = new _configuration__WEBPACK_IMPORTED_MODULE_2__["Configuration"]();
         if (basePath) {
@@ -19269,7 +19270,7 @@ __webpack_require__.r(__webpack_exports__);
 var MetadataResourceService = /** @class */ (function () {
     function MetadataResourceService(httpClient, basePath, configuration) {
         this.httpClient = httpClient;
-        this.basePath = 'http://localhost:8080';
+        this.basePath = 'http://10.190.32.158:8080';
         this.defaultHeaders = new _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpHeaders"]();
         this.configuration = new _configuration__WEBPACK_IMPORTED_MODULE_3__["Configuration"]();
         if (basePath) {
@@ -19600,7 +19601,7 @@ __webpack_require__.r(__webpack_exports__);
 var WorkflowResourceService = /** @class */ (function () {
     function WorkflowResourceService(httpClient, basePath, configuration) {
         this.httpClient = httpClient;
-        this.basePath = 'http://localhost:8080';
+        this.basePath = 'http://10.190.32.158:8080';
         this.defaultHeaders = new _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpHeaders"]();
         this.configuration = new _configuration__WEBPACK_IMPORTED_MODULE_3__["Configuration"]();
         if (basePath) {
@@ -27757,7 +27758,7 @@ __webpack_require__.r(__webpack_exports__);
 var HealthCheckResourceService = /** @class */ (function () {
     function HealthCheckResourceService(httpClient, basePath, configuration) {
         this.httpClient = httpClient;
-        this.basePath = 'http://localhost:8080';
+        this.basePath = 'http://10.190.32.158:8080';
         this.defaultHeaders = new _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpHeaders"]();
         this.configuration = new _configuration__WEBPACK_IMPORTED_MODULE_2__["Configuration"]();
         if (basePath) {
@@ -27837,7 +27838,7 @@ __webpack_require__.r(__webpack_exports__);
 var EventResourceService = /** @class */ (function () {
     function EventResourceService(httpClient, basePath, configuration) {
         this.httpClient = httpClient;
-        this.basePath = 'http://localhost:8080';
+        this.basePath = 'http://10.190.32.158:8080';
         this.defaultHeaders = new _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpHeaders"]();
         this.configuration = new _configuration__WEBPACK_IMPORTED_MODULE_3__["Configuration"]();
         if (basePath) {
