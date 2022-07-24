@@ -36,13 +36,13 @@
             "locked": "2.17.1"
         },
         "org.elasticsearch.client:elasticsearch-rest-client": {
-            "locked": "6.8.12"
+            "locked": "6.8.12999"
         },
         "org.elasticsearch.client:elasticsearch-rest-high-level-client": {
-            "locked": "6.8.12"
+            "locked": "6.8.12999"
         },
         "org.elasticsearch.client:transport": {
-            "locked": "6.8.12"
+            "locked": "6.8.12999"
         },
         "org.springframework.boot:spring-boot-starter": {
             "locked": "2.6.7"

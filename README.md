@@ -41,7 +41,7 @@ Binaries are available from [Netflix OSS Maven](https://artifacts.netflix.net/ne
 | conductor-core                  | Core Conductor module                                                                           |
 | conductor-redis-persistence     | Persistence and queue using Redis/Dynomite                                                      |
 | conductor-cassandra-persistence | Persistence using Cassandra                                                                     |
-| conductor-es6-persistence       | Indexing using Elasticsearch 6.X                                                                |
+| conductor-es7-persistence       | Indexing using Elasticsearch 6.X                                                                |
 | conductor-rest                  | Spring MVC resources for the core services                                                      |
 | conductor-ui                    | node.js based UI for Conductor                                                                  |
 | conductor-client                | Java client for Conductor that includes helpers for running worker tasks                        |

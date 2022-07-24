@@ -21,13 +21,13 @@ jar{
 
 dependencies {
 
-//    implementation project(':conductor-rest')
-    implementation('com.netflix.conductor:conductor-rest:3.10.0')
-//    implementation project(':conductor-core')
-    implementation('com.netflix.conductor:conductor-core:3.10.0')
+    implementation project(':conductor-rest')
+//    implementation('com.netflix.conductor:conductor-rest:3.10.0')
+    implementation project(':conductor-core')
+//    implementation('com.netflix.conductor:conductor-core:3.10.0')
     implementation project(':conductor-redis-persistence')
     implementation project(':conductor-cassandra-persistence')
-    implementation project(':conductor-es6-persistence')
+//    implementation project(':conductor-es7-persistence')
     implementation project(':conductor-grpc-server')
     implementation project(':conductor-redis-lock')
     implementation project(':conductor-redis-concurrency-limit')
@@ -55,6 +55,7 @@ dependencies {
     implementation 'org.postgresql:postgresql:42.3.4'
     implementation 'com.netflix.conductor:conductor-common-persistence:3.10.0'
     implementation 'com.netflix.conductor:conductor-postgres-persistence:3.10.0'
+    implementation 'com.netflix.conductor:conductor-es7-persistence:3.10.0'
 
     //    runtimeOnly 'com.netflix.conductor:conductor-es7-persistence:3.9.1-rc.1'
     runtimeOnly "org.glassfish.jaxb:jaxb-runtime:${revJAXB}"
